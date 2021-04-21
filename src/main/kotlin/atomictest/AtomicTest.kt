@@ -1,3 +1,4 @@
+// This library is written by Bruce Eckel & Svetlana Isakova
 package atomictest
 
 import kotlin.math.abs

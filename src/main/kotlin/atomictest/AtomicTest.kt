@@ -105,8 +105,10 @@ fun capture(f: () -> Unit): CapturedException =
             "$ERROR_TAG Expected an exception"
         )
     } catch (e: Throwable) {
-        CapturedException(e::class,
-            (e.message?.let { ": $it" } ?: ""))
+        CapturedException(
+            e::class,
+            (e.message?.let { ": $it" } ?: "")
+        )
     }
 
 /**

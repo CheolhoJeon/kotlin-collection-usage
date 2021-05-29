@@ -15,7 +15,8 @@ fun main() {
     list.joinToString() { "$it" } eq
         "9, 11, 23, 32"
 
-    // If number of element is bigger than [limit]
+    // If the number of element is bigger than [limit],
+    // else elements are skipped and truncated is placed in last of string
     list.joinToString(limit = 3, truncated = "...") eq
         "9, 11, 23, ..."
 
